@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri Kenangan - Risky</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <style>
+    /* CSS khusus untuk tampilan galeri */
+    .slideshow-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    /* Setiap slide dibatasi agar berukuran tidak terlalu besar dan beraspek 3:4 */
+    .slide {
+      max-width: 300px; /* Atur sesuai kebutuhan */
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,150,255,0.5);
+    }
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <h1 class="glitch-text">Loading Galeri Kenangan...</h1>
+  </div>
+
+  <!-- Partikel background -->
+  <div id="particles-js"></div>
+
+  <!-- Konten Utama -->
+  <main class="container">
+    <h1 class="judul glitch-text">Galeri Kenangan</h1>
+    
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="../assets/images/photo1.jpg" alt="Foto 1">
+      </div>
+      <div class="slide fade">
+        <img src="../assets/images/photo2.jpg" alt="Foto 2">
+      </div>
+      <div class="slide fade">
+        <img src="../assets/images/photo3.jpg" alt="Foto 3">
+      </div>
+      <!-- Tambahkan slide lain jika diperlukan -->
+    </div>
+    
+    <!-- Tombol Navigasi Kembali ke Beranda dengan penempatan di bawah -->
+    <div style="margin-top: 8rem; text-align: center;">
+      <a href="../index.html" class="tombol">Kembali ke Beranda</a>
+    </div>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>
+

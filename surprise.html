@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surprise! - Risky</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <style>
+    /* CSS untuk tata letak flexbox */
+    .content-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .text-content {
+      flex: 1;
+      max-width: 600px;
+      text-align: left;
+    }
+    .spotify-embed {
+      flex: 1;
+      max-width: 300px;
+    }
+    .spotify-embed iframe {
+      width: 100%;
+      border-radius: 12px;
+    }
+    /* Responsif untuk layar kecil */
+    @media (max-width: 768px) {
+      .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+      .text-content, .spotify-embed {
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <h1 class="glitch-text">Loading Surprise!</h1>
+  </div>
+
+  <!-- Partikel background -->
+  <div id="particles-js"></div>
+
+  <!-- Konten Utama -->
+  <main class="container">
+    <h1 class="judul glitch-text">Surprise!</h1>
+    <div class="content-wrapper">
+      <!-- Teks Ucapan di Sebelah Kiri -->
+      <div class="text-content">
+        <p style="font-size: 1.3rem;">
+          Terkadang hidup penuh dengan kejutan yang manis.<br>
+          Terima kasih sudah jadi teman yang selalu menginspirasi.<br>
+          Hari ini, biarkan momen kejutan ini menjadi pengingat bahwa kamu istimewa!
+        </p>
+        <p style="margin-top: 1rem; font-style: italic;">
+          "Keajaiban itu ada, dan kamu adalah salah satunya."
+        </p>
+      </div>
+      <!-- Pemutar Spotify di Sebelah Kanan -->
+      <div class="spotify-embed">
+        <iframe src="https://open.spotify.com/embed/track/7MXVkk9YMctZqd1Srtv4MB?utm_source=generator" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+    </div>
+    <!-- Tombol Navigasi Kembali ke Beranda -->
+    <div style="margin-top: 4rem; text-align: center;">
+      <a href="../index.html" class="tombol">Kembali ke Beranda</a>
+    </div>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

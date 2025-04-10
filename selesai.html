@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terima Kasih - Risky</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <style>
+    .closing-container {
+      text-align: center;
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .closing-text {
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.8;
+    }
+
+    .heart {
+      color: #00f0ff;
+      font-size: 2.5rem;
+      animation: pulse 1.2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+
+    .button-container {
+      margin-top: 5rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <main class="container">
+    <div class="closing-container">
+      <h1 class="judul glitch-text">Selesai 🎉</h1>
+      <p class="closing-text">
+        Terima kasih sudah menikmati perjalanan kecil ini bersama kami.<br>
+        Semoga ulang tahun kali ini menjadi awal dari banyak hal baik.<br>
+        Jangan lupa terus tersenyum dan jadi versi terbaik dari dirimu!<br><br>
+        Dengan penuh kasih dari kami, teman-temanmu 💙<br><br>
+        <span class="heart">💙</span>
+      </p>
+
+      <div class="button-container">
+        <a href="../index.html" class="tombol">Kembali ke Awal</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>
